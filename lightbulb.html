@@ -11,8 +11,23 @@
 
 <body>
   <img id="bulb" src="images/bulb-off.gif">
-  <button id="on" src='images/bulb-on.gif'">Licht aan</button>
-  <button id="off" src='images/bulb-off.gif'">Licht uit</button>
+  <button id="on" onclick="on()" src='images/bulb-on.gif'">Licht aan</button>
+  <button id="off" onclick="off()" src='images/bulb-off.gif'">Licht uit</button>
+
+<script>
+function on(){
+document.getElementById("bulb").src="images/bulb-on.gif";
+   
+}
+
+  function off(){
+  document.getElementById("bulb").src="images/bulb-off.gif";
+
+  }
+
+</script>
+
+  
 </body>
 
 </html>

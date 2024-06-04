@@ -10,9 +10,27 @@
 <body>
   <h1>North Face T-shirt</h1>
   <p>Kleur: <strong id="color"></strong></p>
-  <button>Zwart</button>
-  <button>Paars</button>
-  <button>Rood</button>
-  <img id="shirt" src="images/shirt-black.webp">
+  <button onclick = zwart()>Zwart</button>
+  <button onclick = paars()>Paars</button>
+  <button onclick = rood()>Rood</button>
+ 
+
+  <script> 
+  function zwart(){
+    document.getElementById("shirt").src= "images/shirt-black.webp" ;
+  document.getElementById("color").innerText= "zwart";
+  }
+  
+    function paars(){
+      document.getElementById("shirt").src= "images/shirt-purple.webp" ;
+      document.getElementById("color").innerText= "Paars";
+    }
+
+    function rood(){
+      document.getElementById("shirt").src= "images/shirt-red.webp" ;
+      document.getElementById("color").innerText= "Rood";
+    }
+  </script>
+   <img id="shirt" src="images/shirt-black.webp">
 </body>
 </html>
